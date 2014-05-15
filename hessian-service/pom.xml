@@ -15,5 +15,12 @@
    </parent>
   
   <dependencies>
+  
+  	<dependency>
+  		 <groupId>com.zf.hessian</groupId>
+		  <artifactId>hessian-client</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>  
+  	</dependency>
+  
   </dependencies>
 </project>
