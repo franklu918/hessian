@@ -10,15 +10,19 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-<!--    <context-param>   -->
-<!--         <param-name>contextConfigLocation</param-name>   -->
-<!--         <param-value>     -->
-<!--         classpath*:spring.xml   -->
-<!--         </param-value>   -->
-<!--    </context-param>   -->
-   
-<!--    <listener>   -->
-<!--         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>   -->
-<!--    </listener>   -->
+  <servlet>  
+   <servlet-name>myservice</servlet-name>  
+   <servlet-class>com.caucho.hessian.server.HessianServlet</servlet-class>
+   <load-on-startup>1</load-on-startup>
+   <init-param>
+        <param-name>service-class</param-name>  
+	    <param-value>com.zf.hessian.service.MyServiceImpl</param-value> 
+   </init-param>  
+  </servlet>  
+  <servlet-mapping>  
+	  <servlet-name>myservice</servlet-name>  
+	  <url-pattern>/myservice</url-pattern>  
+  </servlet-mapping>  
   
+  <!-- dfs -->
 </web-app>

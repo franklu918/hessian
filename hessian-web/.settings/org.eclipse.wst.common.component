@@ -12,7 +12,7 @@
         <dependent-module archiveName="hessian-client-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hessian-client/hessian-client">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="hessian-web"/>
         <property name="java-output-path" value="/hessian-web/target/classes"/>
+        <property name="context-root" value="hessian"/>
     </wb-module>
 </project-modules>
